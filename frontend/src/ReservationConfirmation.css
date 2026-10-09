@@ -1,0 +1,81 @@
+.reservation-confirmation {
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 30px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.confirmation-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: #e8f7ed;
+  color: #1f8f4d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.reservation-confirmation h2 {
+  margin-bottom: 8px;
+}
+
+.confirmation-message {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.reservation-details {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-row span {
+  color: #666;
+}
+
+.detail-row strong {
+  text-align: right;
+}
+
+.reservation-status {
+  text-transform: capitalize;
+  color: #1f8f4d;
+}
+
+.book-another-button {
+  margin-top: 25px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  background: #2563eb;
+  color: white;
+}
+
+.book-another-button:hover {
+  background: #1d4ed8;
+}

@@ -1,0 +1,24 @@
+.owner-dashboard-header {
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.owner-dashboard-actions {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .owner-dashboard-header {
+    align-items: flex-start !important;
+    padding: 16px !important;
+  }
+
+  .owner-dashboard-actions {
+    width: 100%;
+  }
+
+  .owner-dashboard-actions button {
+    flex: 1;
+    min-height: 44px;
+  }
+}

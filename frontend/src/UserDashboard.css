@@ -1,0 +1,357 @@
+/* =====================================================
+   USER DASHBOARD — PREMIUM REDESIGN
+===================================================== */
+
+/* ── Root ── */
+.ud-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  /* Subtle dot-grid background */
+  background-color: #eef2f7;
+  background-image: radial-gradient(circle, #c3d2e4 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+/* ── Header ── */
+.ud-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #ffffff;
+  border-bottom: 1px solid #e8eaed;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.ud-header-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 28px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* ── Logo ── */
+.ud-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.ud-logo-mark {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: #111820;
+  color: #f7a928;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+.ud-logo-text {
+  font-size: 20px;
+  font-weight: 800;
+  color: #111820;
+  letter-spacing: -0.5px;
+}
+
+/* ── Tabs ── */
+.ud-tabs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+  margin-left: 16px;
+}
+
+.ud-tab {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: none;
+  color: #69727a;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+}
+
+.ud-tab:hover {
+  background: #f0f2f5;
+  color: #111820;
+}
+
+.ud-tab-active {
+  background: #111820 !important;
+  color: #ffffff !important;
+}
+
+.ud-tab-icon {
+  font-size: 15px;
+}
+
+/* ── Header right ── */
+.ud-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.ud-user-chip {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 6px 14px 6px 6px;
+  border-radius: 50px;
+  background: #f0f2f5;
+  border: 1px solid #e8eaed;
+}
+
+.ud-avatar {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #087fc1;
+  color: white;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.ud-username {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111820;
+}
+
+.ud-logout {
+  padding: 8px 18px;
+  border: 1.5px solid #e8eaed;
+  border-radius: 8px;
+  background: white;
+  color: #111820;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.ud-logout:hover {
+  background: #fff1f0;
+  border-color: #fca5a5;
+  color: #dc2626;
+}
+
+/* ── Main content ── */
+.ud-main {
+  flex: 1;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 28px;
+}
+
+/* ── Panel ── */
+.ud-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ud-panel-heading h2 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #111820;
+  margin-bottom: 4px;
+}
+
+.ud-panel-heading p {
+  color: #69727a;
+  font-size: 15px;
+}
+
+/* ── Selected lot info bar ── */
+.ud-selected-lot {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 24px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+}
+
+.ud-selected-lot-info {
+  flex: 1;
+}
+
+.ud-selected-lot-info h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111820;
+  margin-bottom: 4px;
+}
+
+.ud-selected-lot-info p {
+  color: #69727a;
+  font-size: 14px;
+}
+
+.ud-slot-badge {
+  flex-shrink: 0;
+}
+
+.ud-badge-available {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 50px;
+  background: #e8f7ed;
+  color: #1a7a45;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ud-badge-full {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 50px;
+  background: #fef2f2;
+  color: #dc2626;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ud-goto-search {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #087fc1;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.ud-goto-search:hover {
+  background: #07547b;
+  transform: translateY(-1px);
+}
+
+/* ── Stats row ── */
+.ud-stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.ud-stat-card {
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ud-stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+.ud-stat-card strong {
+  font-size: 36px;
+  font-weight: 900;
+  color: #111820;
+  line-height: 1;
+}
+
+.ud-stat-card span {
+  font-size: 13px;
+  color: #69727a;
+  font-weight: 500;
+}
+
+.ud-stat-green strong {
+  color: #1a7a45;
+}
+
+.ud-stat-blue strong {
+  color: #087fc1;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .ud-header-inner {
+    padding: 0 16px;
+    flex-wrap: wrap;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 12px;
+  }
+
+  .ud-tabs {
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+    overflow-x: auto;
+    padding-bottom: 2px;
+    flex-wrap: nowrap;
+  }
+
+  .ud-tab span:not(.ud-tab-icon) {
+    display: none;
+  }
+
+  .ud-tab {
+    padding: 8px 12px;
+  }
+
+  .ud-main {
+    padding: 20px 16px;
+  }
+
+  .ud-stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ud-selected-lot {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ud-stats-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ud-username {
+    display: none;
+  }
+}

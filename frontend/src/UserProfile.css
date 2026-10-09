@@ -1,0 +1,238 @@
+.profile-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.profile-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.profile-avatar {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 28px;
+  font-weight: 700;
+  background: #eef6ff;
+  color: #2563eb;
+}
+
+.profile-card h2 {
+  margin-bottom: 5px;
+}
+
+.profile-role {
+  margin-top: 0;
+  color: #666;
+}
+
+.profile-details {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.profile-details > div {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.profile-details p {
+  margin: 5px 0 0;
+  color: #555;
+}
+
+.profile-logout {
+  margin-top: 25px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  background: #dc2626;
+  color: white;
+}
+
+.profile-logout:hover {
+  background: #b91c1c;
+}
+
+/* Profile-specific refinements keep the existing dashboard styles untouched. */
+.profile-card {
+  position: relative;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px;
+  border-color: #dbeafe;
+  border-radius: 16px;
+  box-shadow: 0 10px 28px rgba(30, 64, 175, 0.08);
+  text-align: left;
+}
+
+.profile-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.profile-avatar {
+  width: 78px;
+  height: 78px;
+  margin: 0;
+  border: 5px solid #dbeafe;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 26px;
+}
+
+.profile-identity {
+  min-width: 0;
+}
+
+.profile-eyebrow {
+  margin: 0 0 5px;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.profile-card h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: clamp(1.45rem, 3vw, 2rem);
+}
+
+.profile-email {
+  overflow: hidden;
+  margin: 6px 0 0;
+  color: #64748b;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.profile-role-badge {
+  align-self: start;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #ecfdf5;
+  color: #166534;
+  font-size: 0.8rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.profile-account-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  color: #166534;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.profile-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 0 3px #dcfce7;
+}
+
+.profile-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 24px;
+  text-align: left;
+}
+
+.profile-detail-item {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.profile-detail-item strong {
+  display: block;
+  color: #64748b;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.profile-detail-item p {
+  overflow: hidden;
+  margin: 7px 0 0;
+  color: #0f172a;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.profile-logout {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: 24px;
+  padding: 13px 20px;
+  border: 1px solid #fecaca;
+  border-radius: 9px;
+  background: #fff1f2;
+  color: #b91c1c;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.profile-logout:hover {
+  border-color: #fca5a5;
+  background: #fee2e2;
+}
+
+@media (max-width: 640px) {
+  .profile-container {
+    margin: 20px auto;
+    padding: 16px;
+  }
+
+  .profile-card {
+    padding: 22px 18px;
+  }
+
+  .profile-header {
+    grid-template-columns: auto 1fr;
+    gap: 14px;
+  }
+
+  .profile-avatar {
+    width: 64px;
+    height: 64px;
+    font-size: 22px;
+  }
+
+  .profile-role-badge {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+
+  .profile-details {
+    grid-template-columns: 1fr;
+  }
+}
